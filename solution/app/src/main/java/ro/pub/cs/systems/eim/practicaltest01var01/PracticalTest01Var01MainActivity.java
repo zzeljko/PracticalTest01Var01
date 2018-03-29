@@ -60,6 +60,8 @@ public class PracticalTest01Var01MainActivity extends AppCompatActivity {
                 editTextLog.setText(lastLog + ", " + "N");
                 counter++;
                 Toast.makeText(getApplicationContext(), counter + "", Toast.LENGTH_SHORT).show();
+
+                testStartService();
             }
         });
 
@@ -71,6 +73,8 @@ public class PracticalTest01Var01MainActivity extends AppCompatActivity {
                 counter++;
 
                 Toast.makeText(getApplicationContext(), counter + "", Toast.LENGTH_SHORT).show();
+
+                testStartService();
             }
         });
 
@@ -82,6 +86,8 @@ public class PracticalTest01Var01MainActivity extends AppCompatActivity {
                 counter++;
 
                 Toast.makeText(getApplicationContext(), counter + "", Toast.LENGTH_SHORT).show();
+
+                testStartService();
             }
         });
 
@@ -93,8 +99,16 @@ public class PracticalTest01Var01MainActivity extends AppCompatActivity {
                 counter++;
 
                 Toast.makeText(getApplicationContext(), counter + "", Toast.LENGTH_SHORT).show();
+                testStartService();
             }
         });
+    }
+
+    private void testStartService() {
+
+        if (counter == 4) {
+
+        }
     }
 
     @Override
